@@ -18,7 +18,14 @@ def test_div_normal():
 #   - División por cero → debe lanzar ZeroDivisionError
 #
 # Pista: para testear excepciones usá pytest.raises:
-#
-# def test_div_por_cero():
-#     with pytest.raises(ZeroDivisionError):
-#         div(10, 0)
+
+def test_div_decimal():
+    assert div(3, 2) == 1.5
+
+def test_div_negativos():
+    assert div(-6, -2) == 3.0
+    assert div(6, -2) == -3.0
+        
+def test_div_por_cero():
+    with pytest.raises(ZeroDivisionError):
+        div(10, 0)

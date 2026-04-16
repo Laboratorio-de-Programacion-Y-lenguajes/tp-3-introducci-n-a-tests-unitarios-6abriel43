@@ -19,6 +19,12 @@ def test_sqrt_cuadrado_perfecto():
 #
 # Pista: para testear excepciones usá pytest.raises:
 #
-# def test_sqrt_negativo():
-#     with pytest.raises(ValueError):
-#         sqrt(-4)
+def test_sqrt_cero():
+    assert sqrt(0) == 0.0  
+
+def test_sqrt_no_cuadrado_perfecto():
+    assert sqrt(5) == pytest.approx(2.2360679775)
+
+def test_sqrt_negativo():
+    with pytest.raises(ValueError):
+        sqrt(-7)
