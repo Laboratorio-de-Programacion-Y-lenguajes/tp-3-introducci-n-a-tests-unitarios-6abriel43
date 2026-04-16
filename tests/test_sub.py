@@ -25,7 +25,7 @@ def test_sub_resta_positivos():
 [
 (4, 5, -1),         # Restar un número mayor al primero
 (8, 0, 8),          # Restar cero
-(-3, -3, 6),        # Restar dos números negativos
+(-6, -3, -3),        # Restar dos números negativos
 (5.2, 2.9, 2.3)     # Restar dos números decimales
 ]
 )
